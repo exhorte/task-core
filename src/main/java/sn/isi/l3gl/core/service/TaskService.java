@@ -20,6 +20,11 @@ public class TaskService {
         return taskRepository.save(task);
     }
 
+    // Version 0.1.0-SNAPSHOT
+    public List<Task> listTasks() {
+        return taskRepository.findAll();
+    }
+
 
 
 }
